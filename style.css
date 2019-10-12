@@ -1,0 +1,53 @@
+html {
+    background-color: #ffa900;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    margin-top: 10%;
+    color: #ffa900;
+}
+
+.main-container .container {
+    background-color: #d04643;
+    padding: 10px;
+}
+.main-container .container h1{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 4em;
+}
+.main-container .timer p {
+    font-size: 10em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.main-container .options select {
+    display: block;
+    width: 100%;
+    font-size: 3em;
+    background-color: #ffede5;
+    color:#c95b5e;
+    border: none;
+    border-radius: 5px 5px;
+}
+
+.main-container button {
+    display: inline-block;
+    background-color: #ffede5;
+    color:#c95b5e;
+    font-size: 2em;
+    text-decoration: none;
+    margin-top: 10px;
+    height: 50px;
+    min-width: 250px;
+    border: none;
+    border-radius: 5px 5px;
+    cursor: pointer;
+    outline: none;/* remove a seleção quando o botão for clicado */
+}

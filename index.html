@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Pomodoro</title>
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <audio src="./assets/end.mp3" hidden></audio>
+    <div class="main-container">
+        <div class="container">
+            <h1>Pomodoro Timer</h1>
+            <div class="timer">
+                <p>25:00</p>
+            </div>
+            <div class="options">
+                <select>
+                    <option value="60">60 minutos</option>
+                    <option selected value="25">25 minutos</option>
+                    <option value="15">15 minutos</option>
+                    <option value="10">10 minutos</option>
+                </select>
+                
+            </div>
+            <button onclick="startTimer(true)">Iniciar</button>
+            <button onclick="stopTimer(true)">Parar</button>
+        </div>
+    </div>
+    <script>
+
+        startTimer();
+        stopTimer();
+
+    </script>
+</body>
+
+</html>
