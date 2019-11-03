@@ -1,5 +1,6 @@
-html {
-    background-color: #ffa900;
+/* html {
+    background-color: #FFFC31;
+    outline: 0;
 }
 
 .main-container {
@@ -8,19 +9,24 @@ html {
     align-items: center;
     justify-content: center;
     min-height: 100%;
+    min-width: 360px;
     margin-top: 10%;
-    color: #ffa900;
+    color: #F5BB00;
+
 }
 
 .main-container .container {
-    background-color: #d04643;
+    background-color: #E13700;
     padding: 10px;
+    border-radius: 3px 3px;
 }
-.main-container .container h1{
+
+.main-container .container h1 {
     margin: 0 auto;
     text-align: center;
     font-size: 4em;
 }
+
 .main-container .timer p {
     font-size: 10em;
     text-align: center;
@@ -31,23 +37,113 @@ html {
     display: block;
     width: 100%;
     font-size: 3em;
-    background-color: #ffede5;
-    color:#c95b5e;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #F5BB00;
     border: none;
     border-radius: 5px 5px;
 }
 
+.main-container .options option {
+
+    background-color: #E13700;
+    color: #F5BB00;
+
+}
+
+
+
 .main-container button {
-    display: inline-block;
-    background-color: #ffede5;
-    color:#c95b5e;
+
     font-size: 2em;
     text-decoration: none;
     margin-top: 10px;
     height: 50px;
-    min-width: 250px;
+    min-width:100%;
     border: none;
     border-radius: 5px 5px;
     cursor: pointer;
-    outline: none;/* remove a seleção quando o botão for clicado */
+    outline: none;
+
 }
+
+.main-container button#start {
+    background-color: #3F9838;
+    color: #FFF;
+
+}
+
+.main-container button#stop {
+    background-color: rgba(63, 152, 56,0.6);
+    color: #FFF;
+
+} */
+
+html {
+    background-color: #E13700;
+    outline: 0;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    min-width: 360px;
+    margin-top: 10%;
+    color: #FFFC31;
+
+}
+
+.main-container .container {
+    background-color: #3F9838;
+    padding: 10px;
+    border-radius: 3px 3px;
+}
+
+.main-container .container h1 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 4em;
+}
+
+.main-container .timer p {
+    font-size: 10em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.main-container .options select {
+    display: block;
+    width: 100%;
+    font-size: 3em;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #FFFC31;
+    border: none;
+    border-radius: 5px 5px;
+}
+
+.main-container .options option {
+
+    background-color: #3F9838;
+    color: #FFFC31;
+
+}
+
+
+
+.main-container button {
+
+    font-size: 2em;
+    text-decoration: none;
+    margin-top: 10px;
+    height: 50px;
+    min-width: 100%;
+    border: none;
+    border-radius: 5px 5px;
+    cursor: pointer;
+    outline: none;
+    background-color: rgba(42, 73, 47,0.7);
+    color: #FFFC31;
+}
+
