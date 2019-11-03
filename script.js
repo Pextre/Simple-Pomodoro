@@ -11,28 +11,6 @@ function stopTimer(stop = false) {
 
 }
 
-
-function startTimer(start = false) {
-
-  let display = document.querySelector(".timer > p");
-  let duration = document.querySelector(".options > select").value * 60;
-
-  if (start && !active) {
-
-    timer(duration, display);
-    active = true;
-
-  } else if (start && active) {
-
-    stopTimer(true);
-    timer(duration, display);
-    active = true;
-
-  }
-
-}
-
-
 function timer(duration, display) {
   let minutes;
   let seconds;
@@ -66,3 +44,25 @@ function timer(duration, display) {
 
   }, 1000);
 }
+
+function startTimer(start = false) {
+
+  let display = document.querySelector(".timer > p");
+  let duration = document.querySelector(".options > select").value * 60;
+
+  if (start && !active) {
+
+    timer(duration, display);
+    active = true;
+
+  } else if (start && active) {
+
+    clearInterval(currentTimer);
+    timer(duration, display);
+    active = true;
+
+  }
+
+}
+
+
